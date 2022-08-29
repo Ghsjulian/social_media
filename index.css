@@ -1,0 +1,201 @@
+
+/*--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                MENU STYLE
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-*/
+.sidenav {
+    margin-top: 53px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#b0b0b0 ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ff0026;
+    display: bl5ock;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #ffffff;
+}
+
+.closebtn {
+    color: #ff0026;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                ENDED MENU
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-*/
+
+.home_description {
+    margin: 5px;
+    padding: 5px;
+}
+.home_description h1 {
+    font-family: Sans-Serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #0023e7;
+    text-shadow: 1px 1px 1px #cc6a00;
+    margin-bottom: 10px;
+}
+.home_description img {
+    width: 100%;
+    height:200px;
+}
+.explain{
+    margin: 5px;
+    padding: 5px;
+    color: ##3b3b3b;
+    justify-content: center;
+    font-weight: bolder;
+    font-family: Sans-Serif;
+    font-size: 16px;
+    font-style: ;
+}
+.success {
+  margin: 50px 10px 10px 10px;
+  background-color:#ffffff;
+  border: 5px solid transparent;
+  padding: 10px;
+  border-image: url('./google_icons/tree.png') 31 round;
+  box-shadow: 5px 8px 10px 7px hsla(0,0%,36.9%,0.4);
+  justify-content: center;
+}
+.success h6 {
+  margin: 5px;
+  padding: 3px;
+  font-weight: bolder;
+  font-size: 18px;
+  color:#0a491c;
+  text-shadow: 2px 2px 2px hsla(0,0%,0%,0.4);
+}
+.success img {
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+}
+.success_button {
+    width: 89px;
+    height: 40px;
+    border: 3px solid transparent;
+    margin: 8px;
+    padding: px;
+    border-image: url('./google_icons/tomato.png') 31 round;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: #ffffff;
+    color:#0a491c;
+    outline: none;
+    border-radius: 10px;
+}
+.login_btn {
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #ee0fff;
+    font-weight: bolder;
+}
+.login_btn a {
+    color: #ffffff
+    outline: none;
+    text-decoration: none;
+}
+.error {
+  margin: 50px 10px 10px 10px;
+  background-color:#ffffff;
+  border: 5px solid transparent;
+  padding: 10px;
+  border-image: url('./google_icons/tomato.png') 31 round;
+  box-shadow: 5px 8px 10px 7px hsla(0,0%,36.9%,0.4);
+  justify-content: center;
+}
+.error h6 {
+  margin: 5px;
+  padding: 3px;
+  font-weight: bolder;
+  font-size: 18px;
+  color:#e31801;
+  text-shadow: 2px 2px 2px hsla(0,0%,0%,0.4);
+}
+.error img {
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+}
+
+/*=======================================
+<!--------INDEX PAGE STYLES---------!>
+=======================================*/
+.top_bar {
+  width: 100%;
+  background-color :#ffffff ;
+  color: #000000;
+  overflow: auto;
+  border: none;
+  font-weight: bolder;
+  font-family: Trebuchet MS;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+.home_banar img{
+   width: 100%;
+   object-fit: cover;
+}
+.main_content {
+  margin: 5px 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #434343;
+  word-spacing: 4px;
+}
+.home_btn {
+  background-color: #0054b8ea;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-weight: bolder;
+  font-size: 18px;
+  border: 1px solid #0017b1ea;
+  border-radius: 10px;
+  width: 100px;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 8px 5px;
+  float: left;
+  text-align: center;
+}
+.home_btn_login {
+  background-color: #0054b8ea;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-weight: bolder;
+  font-size: 18px;
+  border: 1px solid #0017b1ea;
+  border-radius: 10px;
+  width: 100px;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 8px 5px;
+  float: right;
+  text-align: center;
+}

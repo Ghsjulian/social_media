@@ -1,0 +1,51 @@
+
+ .input-container {
+ display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ .input-container input:hover {
+    background-color: #00ff1f17;
+    color: rgb(0,6,174);
+    border: 2px solid dodgerblue;
+    font-weight: bolder;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: 2px solid #2e79ff;
+}
+.input-field:: placeholder {
+  color: red;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}

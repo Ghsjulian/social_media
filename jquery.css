@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,li {
+  list-style: none;
+}
+  
+data:not(:first-of-type){
+  display: none;
+}
+.icons {
+  width: 30px;
+  height: 30px;
+}
+.top_banar {
+  margin : ;
+  width: 100%;
+}
+.home_description h1 {
+  font-family: serif;
+  font-weight: bolder;
+  color: #07a4ff;
+  word-spacing: 10px;
+  font-size: 25px;
+  margin-top: 70px;
+}
+.explain {
+  margin: 5px;
+  justify-content: center;
+  font-weight: bolder;
+   word-spacing: 5px;
+}

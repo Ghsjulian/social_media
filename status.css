@@ -1,0 +1,169 @@
+.profile_content {
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: left;
+    font-size: 15px;
+    border: 10px solid transparent;
+  padding: 5px;
+  border-image: url('./google_icons/sun_flower2.png') 31 round;
+}
+.profile_content img {
+    width: 55px; 
+    height: 55px;
+    padding: 0px;
+    margin: 0px;
+    border:none;
+}
+.profile_content .comment_user {
+    width: 40px; 
+    height: 40px;
+    padding: 0px;
+    margin: 5px;
+    border-radius: 900px;
+    border:none;
+}
+.profile_content .status_image {
+   width:100%;
+   height:300px;
+   padding: 0px;
+}
+.profile_content a {
+    text-decoration: none;
+    color: hsl(238.7,100%,45.7%);
+    font-weight: bolder;
+}
+.profile_content a:hover{
+    color: hsl(0,0%,36.1%);
+    font-weight: bolder;
+}
+.status {
+    width: 100%;
+    height: 100% auto;
+    margin-right: 8px;
+    padding: 2px;
+    justify-content: center;
+}
+.status tm {
+    margin-left: 0px;
+    margin-bottom: 80px;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 5px;
+    font-size: 13px;
+    color: hsl(201.2,85.7%,50.8%);
+}
+.status #like_btn {
+    margin-bottom:4px;
+    margin-top: 4px;
+    margin-left: 2px;
+    width: 97px;
+    height: 40px;
+    background-color: hsla(214.8,100%,50%,0.619);
+    color: #ffffff;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius:90px;
+    outline: none;
+    border: 3px solid #ffffff;
+}
+.status #like_btn:hover {
+    margin-bottom:5px;
+    margin-top: 0px;
+    margin-left: 7px;
+    width: 95px;
+    background-color: hsl(237.6,100%,43.7%);
+    color:hsl(304,100%,44.5%);
+    padding: 3px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius:90px;
+    outline: none;
+    border: 3px solid hsl(0,0%,100%);
+}
+.post {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    color :hsl(0,0%,41.3%);
+    justify-content: center;
+}
+.comment_area {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 100%;
+    margin:0px;
+    border-top: 8px solid transparent ;
+    border-image: url('./google_icons/tree.png') 23 round;
+}
+.status #comment_box {
+    margin-left:0px;
+    width: 230px;
+    background-color: rgb(153,196,255);
+    color: #ffffff;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius:90px;
+    outline: none;
+    border: 1px solid #ffffff;
+    place-content: #ff0000;
+}
+.status #comment_box:hover {
+    margin-left:0px;
+    width: 230px;
+    background-color: hsla(214.6,100%,19%,0.382);
+    color: #ffffff;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius:90px;
+    outline: none;
+    border: 1px solid #ffffff;
+    place-content: #ff0000;
+}
+.status #comment_btn {
+    outline: none;
+    width: 37px;
+    padding: 5px;
+    background-color: hsl(214.6,100%,51.4%);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius:90px;
+    place-content: #ff0000;
+}
+#comment_btn img {
+    width: 30px;
+    height: 30px;
+}
+.status #comment_btn:hover {
+    outline: none;
+    padding: 5px;
+    width: 37px;
+    background-color:hsl(0,54.5%,0%);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius:90px;
+    place-content: #ff0000;
+}
+.comment_list {
+    
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+    height: 100% auto;
+}
+.comment_list img {
+    width: 38px;
+    height: 38px;
+    border-radius: 900px;
+}
+.comment_list cmnt {
+    margin-left: 115px;
+    padding: 5px;
+    font-size: 14px;
+    color: hsl(0,0%,28.6%);
+    justify-content: center;
+}

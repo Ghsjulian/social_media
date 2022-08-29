@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V8</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+ <link rel="stylesheet" href="./font/css/fontawesome.min.css">
+ <link rel="stylesheet" href="./font/css/fontawesome.css">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.mijn.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form id="myfrm" class="login100-form validate-form p-l-55 p-r-55 p-t-18">
+			<!---		<span class="login100-form-title">
+						Sign In
+					</span>--->
+		<center><img align="center" class="login_avtar" src="./images/user_avtar.png"></center>
+<div id="response"> </div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+						<input id="user_name" class="input100" type="text" name="user_name" placeholder="Enter Username" autocomplete="username" accept="username">
+						<span class="focus-input100"></span>
+					</div>
+	<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+
+						<input id="user_email" class="input100" type="text" name="user_email" placeholder="Enter Email" autocomplete="email" accept="email"/>
+
+						<span class="focus-input100"></span>
+					</div>
+					
+			
+					
+	<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+
+						<input id="user_birth" class="input100" type="text" name="user_birth" placeholder="Date Of Birth">
+
+						<span class="focus-input100"></span>
+					</div>
+
+		<div class="wrap-input100 validate-input" data-validate = "Please enter password">
+
+						<input id="user_password" class="input100" type="password" name="user_password" placeholder="Enter Password">
+
+						<span class="focus-input100"></span>
+					</div>		
+			<br><center>
+<strong>Select Your Gender : </strong>
+  <div id="radio ">
+    <i class="fa fa-male"></i><strong> Male</strong>
+  <input id="user_gender" type="radio" name="gender" value="Male"/>
+
+   <i class="fa fa-female"></i><strong>Female</strong>
+         <input id="user_gender" type="radio" name="gender" value="Female"/>
+   </div>
+   				<div class="text-right p-t-15 p-b-23">
+
+						<span class="txt1">
+
+							Valid Birthday : 
+						</span>
+
+						<a href="#" class="txt2">
+							DD/MM/YY
+						</a>
+					</div>
+					
+
+					<div class="container-login100-form-btn">
+						<button class="login__btn login100-form-btn">
+						<b>	Registration</b>
+						</button>
+					</div>
+
+					<div class="flex-col-c p-t-50 p-b-40">
+						<span class="txt1 p-b-9">
+							Already Have An Account ?
+						</span>
+
+						<a href="#" class="txt3">
+							Sign In now
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#myfrm").on("submit",function(e){
+e.preventDefault();
+var form_data = new FormData(this);
+var name = $("#user_name").val();
+var email = $("#user_email").val();
+var birth = $("#user_birth").val();
+var password = $("#user_password").val();
+var gender = $("#user_gender").val();
+
+
+/*====================================
+     <!------CONDITIONS------!>
+====================================*/
+	if (name=="" || email=="" || birth=="" || password=="")  {
+ $("#response").fadeIn("slow");
+ $("#response").addClass("error").html('<img src="./google_icons/error.png"> Please Fill Out This From !');
+setTimeout(function (){
+$("#response").fadeOut("slow");
+},3000);
+	} else {
+      $.ajax({
+      url : "function.php",
+      type : "POST",
+      data : form_data,
+      contentType : false,
+      processData : false,
+      beforeSend: function(){
+			 $("#response").html('<img src="./icons/loading.gif" width="28" height="28"/><b>  Please Wait...</b>');
+      },
+      success : function(data){
+     setTimeout(function() {
+     $("#myfrm").trigger("reset");
+     $("#response").fadeIn();
+     $("#response").html(data);
+     },1000);
+     setTimeout(function() {
+     $("#response").fadeOut("slow");
+     },3000);
+          }
+       });
+       }
+    });
+});
+</script> 
+	
+<!--===============================================================================================-->
+	<script src="veyndor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min6.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/ybootstrap/js/popper.js"></script>
+	<script src="vegndor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendgor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.miny.js"></script>
+	<script src="vendor/daterangepicker/daterangepickery.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntim6e.js"></script>
+<!--===============================================================================================-->
+	<script src="js/maint.js"></script>
+
+</body>
+</html>

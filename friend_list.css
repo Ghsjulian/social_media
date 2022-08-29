@@ -1,0 +1,104 @@
+
+.users_list {
+  margin: 2px;
+  padding: 5px 10px 5px 10px;
+  align-content: center;
+}
+.person {
+  background-color: transparent;
+}
+.person strong {
+  margin: 3px;
+  padding: 5px;
+  color:#040a44;
+  font-weight: bolder;
+  font-size: 18px;
+} 
+.person img {
+  width: 60px;
+  height: 60px;
+  margin: 3px;
+  padding: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.send_request_btn {
+  float: right ;
+  outline: none;
+  border: none;
+  padding: 6px 15px;
+  margin : 12px 2px 2px 5px;
+  font-weight: bolder;
+  background-color: #005fff;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+.sent {
+  float: right ;
+  outline: none;
+  border: none;
+  padding: 6px 15px;
+  margin : 12px 2px 2px 5px;
+  font-weight: bolder;
+  background-color: #00660d;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+.sent:hover{
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+.disabled_btn {
+  float: right ;
+  outline: none;
+  border: none;
+  padding: 3px 12px;
+  margin : 12px 2px 2px 5px;
+  font-weight: bolder;
+  background-color: #5a5a5a;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+.disabled_btn:hover {
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+.send_request_btn:hover {
+/*background-color:#89ff90;*/
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+.request_sent {
+  float: right ;
+  outline: none;
+  border: none;
+  padding: 6px 15px;
+  margin : 12px 2px 2px 5px;
+  font-weight: bolder;
+  background-color: #aaaaaa;
+  color: #000725;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+/*
+.request_sent:hover {
+  outline: none;
+  border: none;
+  color: #000725;
+}

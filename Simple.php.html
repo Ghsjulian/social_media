@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghs Julian | Web Developer Ghs Julian | Web Designer Ghs Julian | Ghs Julian</title>
+<link rel="stylesheet" href="./css/bts.min.css">
+<link rel="stylesheet" href="./font/css/all.min.css">
+ <link rel="stylesheet" href="./ux_ui.style.css">
+ <link rel="stylesheet" href="./font/css/fontawesome.min.css">
+ <link rel="stylesheet" href="./font/css/fontawesome.css">
+<link rel="stylesheet" href="./css/w3school.css">
+<link rel="stylesheet" href="./file.css">
+<link rel="stylesheet" href="./jQuery.min.css" />
+<script src="./ghs.min.js"></script>
+<script src="./ghs1.min.js"></script>
+<script src="./jquery.min.js"></script>
+ <link rel="stylesheet" href="./index.css">
+</head><body>
+
+latitude: <span class="myLat"></span> <br>
+longitude: <span class="myLng"></span>
+<h1>Your current location is: <span class="location"></span></h1>
+<script>
+var ab = WURFL.is_mobile;
+var ac = WURFL.form_factor;
+var ad = WURFL.complete_device_name;
+var $locationText = $(".location");
+var $locationText_myLat = $(".myLat");
+var $locationText_myLng = $(".myLng");
+
+
+// Check for geolocation browser support and execute success method
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(
+    geoLocationSuccess,
+    geoLocationError,
+    { timeout: 10000 }
+  );
+} else {
+  alert("your browser doesn't support geolocation");
+}
+function geoLocationSuccess(pos) {
+  // get user lat,long
+  var myLat = pos.coords.latitude,
+    myLng = pos.coords.longitude,
+    loadingTimeout;
+$locationText_myLat.text(myLat)
+$locationText_myLng.text(myLng)
+  var loading = function () {
+    $locationText.text("fetching...");
+  };
+
+  loadingTimeout = setTimeout(loading, 600);
+
+  var request = $.get(
+    "https://nominatim.openstreetmap.org/reverse?format=json&lat=" +
+      myLat +
+      "&lon=" +
+      myLng
+  )
+    .done(function (data) {
+      if (loadingTimeout) {
+        clearTimeout(loadingTimeout);
+        loadingTimeout = null;
+        $locationText.text(data.display_name);
+      }
+    })
+    .fail(function () {
+      // handle error
+    });
+}
+
+function geoLocationError(error) {
+  var errors = {
+    1: "Permission denied",
+    2: "Position unavailable",
+    3: "Request timeout"
+  };
+  alert("Error: " + errors[error.code]);
+}
+/*
+========================================
+        IP ADDRESS INFORMATION 
+========================================
+*/
+let apiKey = '1be9a6884abd4c3ea143b59ca317c6b2';
+$.getJSON('https://ipgeolocation.abstractapi.com/v1/?api_key=' + apiKey, function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
+</script>
+
+
+
+
+
+
+	<div data-role="footer" data-position="fixed" class="fixed-bottom">
+		<h4>Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header" data-position="fixed" class="fixed-top">
+		<h1>Ghs Julian</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" class="fixed-bottom">
+		<h4>Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body></html>

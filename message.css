@@ -1,0 +1,95 @@
+.chat_room {
+  margin: 2px 0px 65px 0px;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+ overflow: auto;
+ height: auto;
+}
+
+.user1_icon img {
+  float: right;
+  width:28px;
+  height: 28px;
+  border-radius:100%;
+  margin-left:160px ;
+  object-fit: cover;
+}
+ .texts {
+  float: right;
+  width: 270px;
+  background-color: #006ddd;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bolder;
+  font-family: serif;
+  margin:0px 18px 0px 0px;
+  padding: 20px 30px 15px 45px;
+  border-radius: 999px 999px 0px 999px;
+}
+.user1_icon img {
+  float: right;
+  width:28px;
+  height: 28px;
+  border-radius:999px;
+  margin-left:160px ;
+}
+.partner {
+  float: left;
+  width: 280px;
+  background-color:#00792b;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bolder;
+  font-family: serif;
+  margin:0px 0px 0px 18px;
+  padding: 20px 30px 15px 45px;
+  border-radius: 99px 99px 99px 0px;
+}
+.user2_icon img{
+  float: left;
+  width:28px;
+  height: 28px;
+  border-radius:999px;
+  margin-right:160px;
+  object-fit: cover;
+}
+.type_area {
+  background-color: ;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+.message {
+  padding: 8px;
+  margin: 2px;
+  width: 200px;
+  border-radius:999px;
+  outline: none;
+  color: #003fae;
+  font-family: serif;
+  font-weight: bolder;
+}
+ .message::placeholder{
+  color: #0100cf;
+  font-size: 15px;
+  font-family: serif;
+  font-weight: bolder;
+  margin-left: 15px;
+ }
+.msg_btn {
+  padding: 6px;
+  margin:2px;
+  outline: none;
+  border-radius:999px;
+  background-color: transparent;
+}
+.msg_btn:hover {
+  outline: none;
+  background-color: #ffffff;
+}
+.msg_btn img {
+  width:35px;
+  height: 35px;
+  border-radius:999px;
+  padding: 2px;
+}

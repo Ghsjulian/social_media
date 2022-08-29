@@ -1,0 +1,82 @@
+.intro {
+  font-size: 18px;
+  padding: 5px;
+  font-family: serif;
+}
+.info_area {
+  padding: 10px;
+  overflow: auto;
+  width: 350px;
+}
+
+.profile_avtar {
+ border-radius: 50%;
+ border : 3px solid #00befa;
+	margin:10px auto;
+	overflow:hidden;
+	position:relative;
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+}
+#preview {
+  object-fit: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.profile_avtar input{
+	position:absolute;
+	height:400px;
+	width:400px;
+	left : -200px;
+	top : -200px;
+	background:transparent;
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);  
+}
+.form input {
+  background-color: transparent;
+  outline: none;
+  padding: 5px 5px 0px 8px;
+  border-bottom : 3px solid #00befa;
+  margin-bottom:30px ;
+  font-family: Trebuchet MS;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.form ::placeholder {
+  background-color: transparent;
+  color: #494949;
+  padding-left: 6px;
+  font-family: Trebuchet MS;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.lets_go_btn {
+  outline: none;
+  border: none;
+  padding: 6px 28px;
+  margin-left: 15px;
+  font-weight: bolder;
+  background-color: #00befa;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+  font-size: 18px;
+}
+.lets_go_btn:hover {
+  background-color:#0088d2;
+  transition: 0.6s;
+  outline: none;
+  border: none;
+}
+
+.error {
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  font-weight: bold;
+  color: #de1a00;
+}

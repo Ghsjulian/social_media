@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  
+<form class="">
+<input type="text" class="val">
+<button class="form" type="submit" id="comment" data-idd="1" >
+Comment
+</button> 
+</form>
+
+<br>
+<form class="">
+<input type="text" class="val">
+<button class="form" type="submit" id="comment" data-idd="2" >
+Comment
+</button> 
+</form>
+<br>
+<form class="">
+<input type="text" class="val">
+<button class="form" type="submit" id="comment" data-idd="3" >
+Comment
+</button> 
+</form>
+<br>
+<form class="">
+<input type="text" class="val">
+<button class="form" type="submit" id="comment" data-idd="4" >
+Comment
+</button> 
+</form>
+
+
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+$(".form .val"). click( function (e) {
+e.preventDefault();
+var post_id = $(this).val();
+console.log("okay");
+alert (post_id);
+   })
+});
+</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
